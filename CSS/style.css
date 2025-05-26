@@ -40,9 +40,43 @@ img{
     width: 100%;
 }
 
+.dark-mode-box {
+    width: 250px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.dark-mode-box p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.dark-mode-box button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode-box button:hover {
+    background-color: #555;
+}
+
+/* تأثير وضع الداكن */
 .dark-mode {
     background-color: #222;
     color: #fff;
+}
+
+.dark-mode .dark-mode-box {
+    background-color: #333;
+    color: white;
 }
 
 input,select,button{
