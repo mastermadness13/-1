@@ -161,13 +161,12 @@ function decreaseQuantity(index){
     updateCart()
 }
 
-
 document.getElementById("toggleDarkMode").addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
     localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
 });
 
-// عند تحميل الصفحة، تحقق مما إذا كان المستخدم فعّل الوضع الداكن سابقًا
+
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-mode");
 }
